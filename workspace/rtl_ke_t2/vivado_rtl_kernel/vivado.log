@@ -1,0 +1,183 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May 29 15:53:23 2023
+# Process ID: 38545
+# Current directory: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel
+# Command line: vivado
+# Log file: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado.log
+# Journal file: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/applications/Xilinx/19.2/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 6881.703 ; gain = 193.137 ; free physical = 160988 ; free virtual = 185821
+update_compile_order -fileset sources_1
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_pid38545.debug)
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml kernel.xml -ip_directory ./ip/
+ERROR: [Common 17-69] Command failed: The provided kernel XML file doesn't exist: 'kernel.xml'
+pwd
+/scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vadd_A_B_ex
+vivado_37823.backup.jou
+vivado_37823.backup.log
+vivado_8289.backup.jou
+vivado_8289.backup.log
+vivado.jou
+vivado.log
+vivado_pid38545.debug
+vivado_pid38545.str
+vivado_rtl_kernel.cache
+vivado_rtl_kernel.hw
+vivado_rtl_kernel.ip_user_files
+vivado_rtl_kernel.sim
+vivado_rtl_kernel.srcs
+vivado_rtl_kernel.xpr
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/Vadd_A_B/Vadd_A_B.xci] -no_script -reset -force -quiet
+remove_files  /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/Vadd_A_B/Vadd_A_B.xci
+add_files -scan_for_includes {/scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/testbench/Vadd_A_B_tb.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_counter.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B.v /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/B_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_axi_write_master.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/A_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_adder.v /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_vadd.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_B.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_control_s_axi.v}
+import_files {/scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/testbench/Vadd_A_B_tb.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_counter.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B.v /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/B_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_axi_write_master.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/A_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_adder.v /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_example_vadd.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_B.sv /scratch/pg519/Vitis-Tutorials/Hardware_Acceleration/Feature_Tutorials/01-rtl_kernel_workflow/reference-files/src/IP/Vadd_A_B_control_s_axi.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+move_files -fileset sim_1 [get_files  /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/testbench/Vadd_A_B_tb.sv]
+update_compile_order -fileset sources_1
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_pid38545.debug)
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports -vendor user.org -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-5169] Module 'Vadd_A_B' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm01_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_control' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'interrupt' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'interrupt': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm01_axi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axi_control': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ap_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/component.xml
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B.v] -no_script -reset -force -quiet
+remove_files  /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B.v
+file delete -force /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/A_axi_read_master.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/B_axi_read_master.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_axi_write_master.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_counter.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_vadd.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_B.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/component.xml] -no_script -reset -force -quiet
+remove_files  {/scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_adder.v /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/A_axi_read_master.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/B_axi_read_master.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_axi_write_master.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_counter.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_vadd.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_B.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/component.xml}
+file delete -force /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_adder.v /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/A_axi_read_master.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/B_axi_read_master.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_axi_write_master.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_counter.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example_vadd.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_B.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_example.sv /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/component.xml
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/testbench/Vadd_A_B_tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/testbench/Vadd_A_B_tb.sv
+file delete -force /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/testbench/Vadd_A_B_tb.sv
+export_ip_user_files -of_objects  [get_files /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_control_s_axi.v] -no_script -reset -force -quiet
+remove_files  /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_control_s_axi.v
+file delete -force /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/IP/Vadd_A_B_control_s_axi.v
+add_files -scan_for_includes {/scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/testbench/Vadd_A_B_tb.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/B_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_vadd.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_axi_write_master.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_B.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_control_s_axi.v /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/A_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_counter.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B.v /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_adder.v}
+import_files {/scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/testbench/Vadd_A_B_tb.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/B_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_vadd.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_axi_write_master.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_B.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_control_s_axi.v /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/A_axi_read_master.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_counter.sv /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B.v /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/IP/Vadd_A_B_example_adder.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+move_files -fileset sim_1 [get_files  /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/imports/src/testbench/Vadd_A_B_tb.sv]
+update_compile_order -fileset sources_1
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_pid38545.debug)
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/vivado_pid38545.debug)
+pwd
+/scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel
+ll
+wrong # args: should be "llength list"
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vadd_A_B_ex
+vivado_37823.backup.jou
+vivado_37823.backup.log
+vivado_8289.backup.jou
+vivado_8289.backup.log
+vivado.jou
+vivado.log
+vivado_pid38545.debug
+vivado_pid38545.str
+vivado_rtl_kernel.cache
+vivado_rtl_kernel.hw
+vivado_rtl_kernel.ip_user_files
+vivado_rtl_kernel.sim
+vivado_rtl_kernel.srcs
+vivado_rtl_kernel.xpr
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml kernel.xml -ip_directory ./ip/
+ERROR: [Common 17-69] Command failed: The provided kernel XML file doesn't exist: 'kernel.xml'
+add_files -norecurse -scan_for_includes /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/xml/kernel.xml
+import_files -norecurse /scratch/pg519/Vitis-Tutorials/docs/getting-started-rtl-kernels/reference-files/src/xml/kernel.xml
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml kernel.xml -ip_directory ./ip/
+ERROR: [Common 17-69] Command failed: The provided kernel XML file doesn't exist: 'kernel.xml'
+pwd
+/scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./ip/
+ERROR: [Common 17-69] Command failed: The provided IP directory doesn't exist: './ip/'
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./vivado_rtl_kernel.srcs/sources_1/imports
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+Vadd_A_B.xo
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B
+ERROR: [Common 17-69] Command failed: The '-kernel_xml' or '-kernel_xml_args' must be specified
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml
+ERROR: [Common 17-69] Command failed: The '-ip_directory' must be specified
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./vivado_rtl_kernel.srcs/sources_1/imports
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+ERROR: [Common 17-70] Application Exception: Kernel 'Vadd_A_B' already exists inside XO container 'Vadd_A_B.xo'
+
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Vadd_A_B_ex
+Vadd_A_B.xo
+vivado_37823.backup.jou
+vivado_37823.backup.log
+vivado_8289.backup.jou
+vivado_8289.backup.log
+vivado.jou
+vivado.log
+vivado_pid38545.debug
+vivado_pid38545.str
+vivado_rtl_kernel.cache
+vivado_rtl_kernel.hw
+vivado_rtl_kernel.ip_user_files
+vivado_rtl_kernel.sim
+vivado_rtl_kernel.srcs
+vivado_rtl_kernel.xpr
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./vivado_rtl_kernel.srcs/sources_1/imports -verbose
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+ERROR: [Common 17-70] Application Exception: Kernel 'Vadd_A_B' already exists inside XO container 'Vadd_A_B.xo'
+
+rm Vadd_A_B.xo
+WARNING: [Common 17-259] Unknown Tcl command 'rm Vadd_A_B.xo' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+exec rm Vadd_A_B.xo
+rm: cannot remove ‘Vadd_A_B.xo’: No such file or directory
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./vivado_rtl_kernel.srcs/sources_1/imports -verbose
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+Vadd_A_B.xo
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./vivado_rtl_kernel.srcs/sources_1/imports/src/IP/ -verbose
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+ERROR: [Common 17-70] Application Exception: Kernel 'Vadd_A_B' already exists inside XO container 'Vadd_A_B.xo'
+
+exec rm Vadd_A_B.xo
+package_xo -xo_path Vadd_A_B.xo -kernel_name Vadd_A_B -kernel_xml vivado_rtl_kernel.srcs/sources_1/imports/xml/kernel.xml -ip_directory ./vivado_rtl_kernel.srcs/sources_1/imports/src/IP/ -verbose
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+Vadd_A_B.xo
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 29 16:36:37 2023...

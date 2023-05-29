@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May 29 16:35:59 2023
+# Process ID: 28734
+# Current directory: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex
+# Command line: vivado -source /tmp/prj2190068797993496334.tmp
+# Log file: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/vivado.log
+# Journal file: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /tmp/prj2190068797993496334.tmp
+# --------------------------------------------
+# Start: RTL Kernel Packaging of Sources
+#
+source -notrace /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/imports/package_kernel.tcl
+# Packaging project
+package_project /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/Vadd_A_B mycompany.com kernel Vadd_A_B
+package_xo  -xo_path /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/exports/Vadd_A_B.xo -kernel_name Vadd_A_B -ip_directory /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/Vadd_A_B -kernel_xml /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/imports/kernel.xml
+# Complete: RTL Kernel Packaging of Sources
+# --------------------------------------------
+file mkdir /scratch/pg519/workspace/rtl_ke_t2/src/vitis_rtl_kernel/Vadd_A_B
+close_project

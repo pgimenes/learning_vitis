@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;rtl_ke_t2/src/vitis_rtl_kernel/Vadd_A_B/host_example.cpp&apos;" deleteContents="false" description="Delete resource &apos;rtl_ke_t2/src/vitis_rtl_kernel/Vadd_A_B/host_example.cpp&apos;" element1="/rtl_ke_t2/src/vitis_rtl_kernel/Vadd_A_B/host_example.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1685374775856"/>
+</session>

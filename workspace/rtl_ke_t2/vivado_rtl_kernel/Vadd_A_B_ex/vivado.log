@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May 29 16:35:59 2023
+# Process ID: 28734
+# Current directory: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex
+# Command line: vivado -source /tmp/prj2190068797993496334.tmp
+# Log file: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/vivado.log
+# Journal file: /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /tmp/prj2190068797993496334.tmp
+# open_project /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/Vadd_A_B_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/applications/Xilinx/19.2/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 6840.859 ; gain = 159.414 ; free physical = 162026 ; free virtual = 185558
+# set_property part xcu250-figd2104-2L-e [current_project]
+# --------------------------------------------
+# Start: RTL Kernel Packaging of Sources
+#
+source -notrace /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/imports/package_kernel.tcl
+# Packaging project
+package_project /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/Vadd_A_B mycompany.com kernel Vadd_A_B
+WARNING: [Ipptcl 7-1467] The compile order has been set manually. This prevents the packager from updating                 it if necessary. If errors related to compile order occur, try enabling automatic                 reordering, or calling package_project with the -force_update_compile_order option
+INFO: [IP_Flow 19-5169] Module 'Vadd_A_B' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm01_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_control' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'interrupt' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'interrupt': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm00_axi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm01_axi': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axi_control': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3153] Bus Interface 'ap_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [IP_Flow 19-4728] Bus Interface 'ap_clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm00_axi'.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+package_xo  -xo_path /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/exports/Vadd_A_B.xo -kernel_name Vadd_A_B -ip_directory /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/Vadd_A_B -kernel_xml /scratch/pg519/workspace/rtl_ke_t2/vivado_rtl_kernel/Vadd_A_B_ex/imports/kernel.xml
+WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+WARNING: [Vivado 12-7038] The bus parameter 'ap_clk.FREQ_HZ' has been detected in the kernel IP 'Vadd_A_B'. This may cause validation errors in v++ if a target platform has a different default kernel clock frequency. If validation errors do occur in v++, please edit and re-generate the kernel IP 'Vadd_A_B' to remove the bus parameter 'ap_clk.FREQ_HZ'
+# Complete: RTL Kernel Packaging of Sources
+# --------------------------------------------
+file mkdir /scratch/pg519/workspace/rtl_ke_t2/src/vitis_rtl_kernel/Vadd_A_B
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 29 16:38:26 2023...

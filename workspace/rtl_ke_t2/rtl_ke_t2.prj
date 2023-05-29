@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="rtl_ke_t2" location="/scratch/pg519/workspace/rtl_ke_t2" platform="/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm" platformUID="xilinx:u250:xdma:201830.2" systemProject="rtl_ke_t2_system" sysConfig="config0_0" cpu="x86_0" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.1177841648" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <precompiledKernels name="Vadd_A_B" sourceFile="src/vitis_rtl_kernel/Vadd_A_B/Vadd_A_B.xo">
+          <computeUnits name="Vadd_A_B_1" slr=""/>
+        </precompiledKernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.580435579" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <precompiledKernels name="Vadd_A_B" sourceFile="src/vitis_rtl_kernel/Vadd_A_B/Vadd_A_B.xo"/>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.315461181" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <precompiledKernels name="Vadd_A_B" sourceFile="src/vitis_rtl_kernel/Vadd_A_B/Vadd_A_B.xo">
+          <computeUnits name="Vadd_A_B_1" slr=""/>
+        </precompiledKernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
